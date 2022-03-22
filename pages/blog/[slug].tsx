@@ -392,7 +392,7 @@ export const getStaticProps: GetStaticProps = async ({ params: { slug } }) => {
   const profilePicture = await getTwitterProfilePicture();
 
   const notion = new Client({
-    auth: process.env.NOTION_SECRET
+    auth: 'secret_CsiHPUvcLPXn0n0SwIiTJN0CFz3iyfIAjSLqSHRf4Kw'
   });
 
   const data: any = await getAllArticles(process.env.BLOG_DATABASE_ID);
