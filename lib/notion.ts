@@ -3,7 +3,7 @@ import { QueryDatabaseResponse } from '@notionhq/client/build/src/api-endpoints'
 import slugify from 'slugify';
 
 const notion = new Client({
-  auth: process.env.NOTION_SECRET
+  auth: 'secret_CsiHPUvcLPXn0n0SwIiTJN0CFz3iyfIAjSLqSHRf4Kw'
 });
 
 export const getChangelogData = async (databaseId) => {
