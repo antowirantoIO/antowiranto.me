@@ -1,6 +1,6 @@
 # Specifies intentionally untracked files to ignore when using Git
 # http://git-scm.com/docs/gitignore
-
+.next
 *~
 *.sw[mnpcod]
 .tmp
@@ -13,6 +13,7 @@ Thumbs.db
 UserInterfaceState.xcuserstate
 $RECYCLE.BIN/
 config.xml
+tsconfig.tsbuildinfo
 
 *.log
 log.txt
@@ -22,7 +23,8 @@ npm-debug.log*
 yarn.lock
 package-lock.json
 
-
+public/sitemap.xml
+public/feed.xml
 /.cache/
 /.ionic
 /.sass-cache
@@ -31,6 +33,7 @@ package-lock.json
 /.vscode
 /coverage
 /dist
+.env.local
 .env.development
 .env.local
 /public
@@ -39,6 +42,8 @@ package-lock.json
 /platforms
 /plugins
 /www
+/.next/*
+.vercel
 
 # IDE specific
 .idea/
